@@ -1,0 +1,29 @@
+{
+"name": "drobno-lin",
+"description": "",
+"version": "1.0.0",
+"main": "app.js",
+  "build": {
+  "appId": "drobno.lin",
+  "mac": {
+    "category": "drobno.lin.category.type"
+  }
+},
+"scripts": {
+  "pack": "electron-builder --dir",
+  "dist": "electron-builder",
+"start": "electron .",
+"port": "electron-builder --win portable"
+},
+"author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fraction.js": ">=4.3.6",
+    "mathjs": ">=11.11.1",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.6.4",
+"electron": "^26.3.0"
+  }
+}

@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font: caption;
+    overflow: hidden;
+    background-color: rgb(169 195 255);
+}
+
+header {
+    -webkit-app-region: drag;
+    height: 30px;
+    width: 100vw;
+    background-color: rgb(113, 237, 231);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header div {
+    margin-left: 3px;
+}
+
+main {
+    overflow: auto;
+    padding: 0;
+    height: calc(100vh - 30px);
+    background-color: rgb(169 195 255);
+    margin: 0 5px;
+}
+
+input {
+    width: 30px;
+    background: transparent;
+}
+
+.constraintVar, .constraintLast {
+    display: inline;
+}
+
+#constraintsWrapWrap {
+    max-width: 100%;
+    overflow: auto;
+    width: fit-content;
+}
+
+#gradFWrapWrap {
+    max-width: calc(100% - 60px);
+    overflow: auto;
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+#constraintsWrapWrap {
+    max-height: 213px
+}
+
+#gradFWrap, #gradFZnamWrap {
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.gradFdiv, .constraint div, .constraint select {
+    flex-basis: fit-content;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.constraint {
+    display: flex;
+    justify-content: flex-start;
+}
+
+hr {
+    margin: 3px auto;
+    border: 1px solid black;
+}
+
+#gradFWrapWrapWrap {
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+}
+
+#gradFMax {
+    margin-top: 15px;
+}

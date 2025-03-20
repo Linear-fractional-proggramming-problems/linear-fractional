@@ -1,0 +1,8 @@
+directories:
+  output: dist
+  buildResources: build
+appId: drobno.lin
+mac:
+  category: drobno.lin.category.type
+files: []
+electronVersion: 26.4.1
