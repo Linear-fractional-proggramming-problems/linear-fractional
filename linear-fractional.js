@@ -67,6 +67,7 @@ function prepInput(lines) {
 
   // слайсим именно numConstraints - 1, т.к. по факту введено было именно numConstraints строк
   // а не инкрементированное (см. выше) значение
+  
   return [lines.slice(4 + numConstraints - 1), num_vars, numConstraints, gradF, extrType, constraints];
 }
 
@@ -335,3 +336,4 @@ for (let i = 0; i < n; i++)
   var [lines, num_vars, numConstraints, gradF, extrType, constraints] = prepInput(lines);
   console.log(solve(num_vars, numConstraints, gradF, extrType, constraints));
 }
+module.exports = prepInput, optimizeBasis, solve;
